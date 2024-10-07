@@ -1,0 +1,107 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n        <link href=\"https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap\" rel=\"stylesheet\">\n        <meta charset=\"UTF-8\">\n        <title>Booksmarket</title>\n        <style>\n            body {\n                margin: 0;\n            }\n            h1 {\n                background-image: url('img/Rectangle 1.jpg');\n                background-size: cover;\n                background-position: center;\n                color: white;\n                padding: 0px;\n                margin: 0px;\n                width: 100%;\n                height: 200px;\n                flex-shrink: 0;\n            }\n\n            .nav {\n                background-color: #303552;\n                background-position: center;\n                background-size: cover;\n                color: white;\n                padding:20px 0;\n                text-align: center;\n                margin:0px;\n                width: 100%;\n            }\n            .container{\n                margin:0 auto;\n                padding : 0 15px;\n                max-width: 1170px;\n                text-align: left;\n\n            }\n            .nav-row{\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                column-gap: 30px;\n                row-gap: 20px;\n                flex-wrap: wrap;\n            }\n            .nav-list{\n                display: flex;\n                column-gap: 30px;\n                align-items: center;\n            }\n\n\n            .btn {\n                width: 200px;\n                height: 70px;\n                border-radius: 10px;\n                margin-left: auto;\n                margin-right: auto;\n                background: #AAB6FC;\n                text-align: center;\n                line-height: 65px;\n                display: inline-block;\n                text-decoration: none;\n                font-size: 18px;\n                color: #111;\n                font-family: Allerta;\n\n            }\n            main {\n                flex-grow: 1;\n            }\n            .footer{\n                background-color: #303552;\n                width:100%;\n                height:200px ;\n                margin:0;\n                background-position: center, bottom;\n                padding-top: 240px;\n                margin-top: 340px;\n                margin-bottom: 0;\n            }\n            .contact{\n                color:white;\n                font-family: Allerta;\n                font-size: 16px;\n                object-position: bottom;\n\n            }\n            .copyright{\n                color: white;\n                font-family: Alice;\n                text-align: center;\n\n            }\n            .form{\n                text-align: center;\n                display: block;\n                width: 1209px;\n                height: 500px;\n                margin-left: auto;\n                margin-right: auto;\n                padding-bottom: 170px;\n                padding-top: 0px;\n                margin: 0 auto 50px auto;\n            }\n            .section {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                justify-content: center;\n                height: 100vh;\n                padding-bottom: 30px;\n                padding-top: 50px;\n\n            }\n\n            .logic {\n                width: 200px;\n                height: 70px;\n                border-radius: 10px;\n                background: #AAB6FC;\n                text-align: center;\n                line-height: 35px;\n                display: inline-block;\n                text-decoration: none;\n                font-size: 18px;\n                color: #111;\n                font-family: Allerta;\n                margin-bottom: 20px;\n            }\n            .header__title{\n                margin-left: auto;\n                margin-right: auto;\n                text-align: center;\n            }\n            .books-list{\n                display: flex;\n                column-gap: 90px;\n                align-items: center;\n                text-align: center;\n                background-size: cover;\n                padding-top: 40px;\n                margin-bottom: 0px;\n                margin-top: 450px;\n\n            }\n            .line{\n                padding-top: 6px;\n                padding-bottom: 10px;\n                text-align: center;\n                font-size: 24px;\n            }\n            .news{\n                width: 1209px;\n                height: 300px;\n                flex-shrink: 0;\n                background: #E8EBFD;\n                padding-top: 10px;\n                padding-bottom: 0px ;\n                text-align: center;\n                font-family: Alice;\n                font-size: 20px;\n                font-style: normal;\n                font-weight: 200;\n                line-height: normal;\n            }\n            .img{\n                text-align: left;\n                padding-left: 12px;\n            }\n            .bottom{\n                justify-content: space-between;\n                display: flex;\n                padding-left: 12px;\n                padding-right: 12px;\n                align-items: center;\n                padding-bottom: 20px;\n            }\n        </style>\n    </head>\n<body>\n    <nav class=\"nav\">\n        <div class=\"container\">\n        <div class=\"nav-row\">\n            <a href=\"./index.html\" class=\"logo\">\n                <img src=\"img/logo.svg\" alt=\"Booksmarket Logo\">\n            </a>\n            <ul class=\"nav-list\" style=\"list-style-type:none;\">\n                <li class=\"nav-list=list__item\"><a href=\"./search.html\" class =\"nav-list__link\"><img src=\"img/search.svg\" alt=\"Search\"></a></li>\n                <li class=\"nav-list=list__item\"><a href=\"./profile.html\" class =\"nav-list__link\"><img src=\"img/profile.svg\" alt=\"Profile\"></a></li>\n                <li class=\"nav-list=list__item\"><a href=\"./heart.html\" class =\"nav-list__link\"><img src=\"img/heart.svg\" alt=\"Heart\"></a></li>\n                <li class=\"nav-list=list__item\"> <a href=\"./basket.html\" class =\"nav-list__link\"><img src=\"img/basket.svg\" alt=\"Basket\"></a></li>\n            </ul>\n        </div>\n    </div>\n\n\n</nav>\n    <header class=\"header\">\n        <div class=\"header__title\">\n            <h1 style=\"font-family: 'Alex Brush'; font-size: 400%;\">Booksmarket<br>\n                <a href=\"./about_us.html\" class=\"btn\">about us</a></h1>\n\n        </div>\n    </header>\n    <main class=\"section\" >\n        <div class=\"section\">\n            <ul class=\"books-list\" style=\"list-style-type:none;\">\n                <li class=\"books-list=list__item\"><a href=\"./fant.html\" class =\"books-list__link\"><img src=\"img/fant.svg\"></a><br>Фантастика</li>\n                <li class=\"books-list=list__item\"><a href=\"./detective.html\" class =\"books-list__link\"><img src=\"img/detective.svg\"></a><br>Детектив</li>\n                <li class=\"books-list=list__item\"><a href=\"./romans.html\" class =\"books-list__link\"><img src=\"img/romans.svg\"></a><br>Любовний роман</li>\n                <li class=\"books-list=list__item\"> <a href=\"./fantasy.html\" class =\"books-list__link\"><img src=\"img/fantasy.svg\" ></a><br>Фентезі</li>\n                <li class=\"books-list=list__item\"><a href=\"./adv.html\" class =\"books-list__link\"><img src=\"img/adv.svg\" ></a><br>Пригоди</li>\n\n            </ul>\n        </div>\n        <div class=\"line\">\n            <img src=\"img/line.svg\">\n            <h2>Новини</h2>\n        </div>\n        <div class=\"logic\">\n            <a href=\"./business_logic.html\" class=\"btn\">logic</a>\n            <br>\n        </div>\n\n        <div class=\"container\">\n            <div class=\"news\">\n                <div class=\"img\">\n                    <img src=\"img/book.svg\">\n                </div>\n                <div href=\"news\", style=\"font-size: 150%; color: black;\"><b>Неймовірні знижки</b><br><a/>\n                <p>Купуй улюблені книжки зі знижкою 50%!</p>\n                <div class=\"bottom\">\n                    <p>Акція діє з 01.09.24 по 01.12.24</p>\n                    <img src=\"img/book2.svg\">\n                </div>\n                </div>\n            </div>\n            <div class=\"form\">\n                <form action='/action_page.html'>\n                    <fieldset>\n                <legend>Якщо є питання, заповніть цю форму!</legend>\n                Ваше ім’я:<br>\n                <input type='text' name='firstname' ><br>\n                Ваше прізвище:<br>\n                <input type='text' name='lastname' ><br>\n                        Пишіть сюди!<br>\n                <textarea name=\"message\" rows=\"10\" cols=\"50\">\n\n                </textarea><br>\n                <input type='submit' value='Надіслати'>\n\n                    </fieldset>\n                </form>\n            </div>\n        </div>\n    </main>\n    <footer class=\"footer\">\n        <div class=\"container\">\n            <div class=\"contact\">\n            <table style=\"width:100%;\">\n                <tr>\n                    <th style=\"width:45%\"><img src=\"img/number.svg\" alt=\"Number\"></th>\n                    <th style=\"width:45%\"><img src=\"img/email.svg\" alt=\"Email\"></th>\n                    <th style=\"width:45%\"><img src=\"img/location.svg\" alt=\"Location\"></th>\n                </tr>\n                <tr>\n                    <td>+380983450729</td>\n                    <td>booksmarket@gmail.com</td>\n                    <td>Україна, м. Київ,\n                        вул. Хрещатик 23</td>\n                </tr>\n                <tr>\n                    <td>+380988192275</td>\n\n                </tr>\n            </table>\n        </div>\n            <div class=\"copyright\">\n                <p>2024</p>\n            </div>\n        </div>\n    </footer>\n</body>\n\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 33fa1cacfaf6aa46408a441e3ec93b2fe02ddc8b)
++++ b/index.html	(date 1726763819078)
+@@ -200,8 +200,7 @@
+ </nav>
+     <header class="header">
+         <div class="header__title">
+-            <h1 style="font-family: 'Alex Brush'; font-size: 400%;">Booksmarket<br>
+-                <a href="./about_us.html" class="btn">about us</a></h1>
++            <h1 style="font-family: 'Alex Brush'; font-size: 400%;">Booksmarket<br><a href="./about_us.html" class="btn">about us</a></h1>
+ 
+         </div>
+     </header>
+Index: business_logic.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n    <style>\n    h1 {\n        background-color: #303552;\n        background-position: center;\n        background-size: cover;\n        color: white;\n        padding:20px 30px;\n        margin:0 auto;\n        width: 100%;\n    }\n    .btn{\n        width:25px ;\n        height: 46px;\n    }\n    </style>\n</head>\n<body>\n<h1>\n    Опис бізнес-логіки<br><br>\n    <a href=\"./index.html\" class=\"btn\"> <img src=\"img/back.svg\" alt=\"Booksmarket Logo\" style=\"width:25px ;\n        height: 46px;\"></a>\n</h1>\n<h2>\n    Онлайн книгарня\n</h2>\n<p>Основна бізнес-логіка онлайн книгарні полягає у створенні зручного та ефективного процесу купівлі книг через інтернет, що забезпечує позитивний користувацький досвід для покупців, а також стабільний потік продажів і ріст для компанії.\n\n    Каталог товарів\n\n    Асортимент: Онлайн книгарня пропонує широкий вибір літератури, включаючи художні та наукові книги, навчальні посібники, дитячі видання, електронні книги та аудіокниги. Товари організовані у категорії для зручного пошуку.\n    Фільтрація та пошук: Покупці можуть швидко знайти потрібну книгу за жанром, автором, назвою.\n    Оформлення замовлення\n\n    Кошик: Клієнти можуть додавати книги до кошика, переглядати загальну вартість та переходити до оформлення замовлення.\n    Особистий кабінет: Зареєстровані користувачі мають змогу зберігати історію замовлень, додавати книги до списку бажань, а також налаштовувати адреси доставки.\n    Оформлення замовлення: Покупець заповнює свої контактні дані, вибирає спосіб доставки та оплати. Користувачі можуть оплатити покупку онлайн .\n    Оплата та безпека\n\n    Онлайн оплата: Підтримка основних платіжних систем — банківські картки, електронні гаманці, тощо.\n    Безпека: Всі фінансові операції захищені SSL-шифруванням та іншими сучасними технологіями захисту даних для безпеки покупців.\n\n    Географія: Доставка здійснюється по всій країні або за кордон. Клієнти можуть обирати кур'єрську доставку, поштові служби або самовивіз з певних точок.\n\n\n    Онлайн консультація: Клієнти можуть отримати допомогу через заповнення форми або гарячу лінію, якщо виникли питання щодо вибору книги або процесу оформлення замовлення.\n    Повернення товару: Якщо книга пошкоджена або не відповідає очікуванням, покупець може повернути її відповідно до політики повернення.\n    Аналітика і персоналізація\n\n    Аналітика продажів: Постійний аналіз попиту на книги для оновлення асортименту і проведення ефективних маркетингових кампаній.</p>\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/business_logic.html b/business_logic.html
+--- a/business_logic.html	(revision 33fa1cacfaf6aa46408a441e3ec93b2fe02ddc8b)
++++ b/business_logic.html	(date 1726756811923)
+@@ -34,7 +34,7 @@
+ 
+     Асортимент: Онлайн книгарня пропонує широкий вибір літератури, включаючи художні та наукові книги, навчальні посібники, дитячі видання, електронні книги та аудіокниги. Товари організовані у категорії для зручного пошуку.
+     Фільтрація та пошук: Покупці можуть швидко знайти потрібну книгу за жанром, автором, назвою.
+-    Оформлення замовлення
++
+ 
+     Кошик: Клієнти можуть додавати книги до кошика, переглядати загальну вартість та переходити до оформлення замовлення.
+     Особистий кабінет: Зареєстровані користувачі мають змогу зберігати історію замовлень, додавати книги до списку бажань, а також налаштовувати адреси доставки.
+@@ -49,7 +49,7 @@
+ 
+     Онлайн консультація: Клієнти можуть отримати допомогу через заповнення форми або гарячу лінію, якщо виникли питання щодо вибору книги або процесу оформлення замовлення.
+     Повернення товару: Якщо книга пошкоджена або не відповідає очікуванням, покупець може повернути її відповідно до політики повернення.
+-    Аналітика і персоналізація
++
+ 
+     Аналітика продажів: Постійний аналіз попиту на книги для оновлення асортименту і проведення ефективних маркетингових кампаній.</p>
+ </body>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"9a8ceb2a-10f8-4b9f-948b-968d6c0a34d1\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 1\n}]]></component>\n  <component name=\"ProjectId\" id=\"2mID3quNz32AQ7oxpnUKpBwW2pk\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"last_opened_file_path\": \"/Users/viola/Desktop/@EmmaWailett/web-site\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"9a8ceb2a-10f8-4b9f-948b-968d6c0a34d1\" name=\"Changes\" comment=\"\" />\n      <created>1726755001326</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1726755001326</updated>\n      <workItem from=\"1726755002436\" duration=\"20000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 33fa1cacfaf6aa46408a441e3ec93b2fe02ddc8b)
++++ b/.idea/workspace.xml	(date 1726757092411)
+@@ -1,15 +1,23 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9a8ceb2a-10f8-4b9f-948b-968d6c0a34d1" name="Changes" comment="" />
++    <list default="true" id="9a8ceb2a-10f8-4b9f-948b-968d6c0a34d1" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/business_logic.html" beforeDir="false" afterPath="$PROJECT_DIR$/business_logic.html" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 1
+-}]]></component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 1
++}</component>
+   <component name="ProjectId" id="2mID3quNz32AQ7oxpnUKpBwW2pk" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+@@ -20,7 +28,12 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "WebServerToolWindowFactoryState": "false",
++    "git-widget-placeholder": "main",
+     "last_opened_file_path": "/Users/viola/Desktop/@EmmaWailett/web-site",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
+@@ -33,6 +46,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1726755001326</updated>
+       <workItem from="1726755002436" duration="20000" />
++      <workItem from="1726756758941" duration="333000" />
+     </task>
+     <servers />
+   </component>

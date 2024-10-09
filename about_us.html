@@ -3,53 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <head>
+
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_about.css">
     <meta charset="UTF-8">
     <title>Booksmarket</title>
 
-      </head>
+  </head>
 <body>
-<nav class="nav">
-  <div class="container">
-    <div class="nav-row">
-      <a href="./index.html" class="logo">
-        <img src="img/logo.svg" alt="Booksmarket Logo">
-      </a>
-      <ul class="nav-list" style="list-style-type:none;">
-        <li class="nav-list=list__item"><a href="./search.html" class ="nav-list__link"><img src="img/search.svg" alt="Search"></a></li>
-        <li class="nav-list=list__item"><a href="./profile.html" class ="nav-list__link"><img src="img/profile.svg" alt="Profile"></a></li>
-        <li class="nav-list=list__item"><a href="./heart.html" class ="nav-list__link"><img src="img/heart.svg" alt="Heart"></a></li>
-        <li class="nav-list=list__item"> <a href="./basket.html" class ="nav-list__link"><img src="img/basket.svg" alt="Basket"></a></li>
-      </ul>
-    </div>
-  </div>
+<header>
+<table>
+<tr class="nav-row">
+    <td class="nav-cell"><a href="./index.html" class="logo"><img src="img/logo.svg" alt="Booksmarket Logo"></a></td>
+  <td class="nav-links" colspan="3">
+    <a href="#"><img src="img/search.svg" alt="Search"></a>
+    <a href="#"><img src="img/profile.svg" alt="Profile"></a>
+    <a href="#"><img src="img/heart.svg" alt="Heart"></a>
+    <a href="#"><img src="img/basket.svg" alt="Basket"></a>
+  </td>
+</tr>
 
 
-</nav>
-<header class="header">
-  <div class="header__title">
-    <h1 style="font-family: 'Alex Brush'; font-size: 400%;">Booksmarket<br>
-    <a href="./index.html" class="btn"><img src="img/back.svg" alt="Back"></a></h1>
+    <tr class="header-row">
+      <td colspan="4">
+        <h1>Bookmarket</h1>
+        <h2>About us</h2>
+      </td>
+    </tr>
+    </table>
+</header>
 
-  </div>
-  <main class="main">
-    <div class="text">
-    <p>Ласкаво просимо до нашої онлайн книгарні — місця, де кожен знайде свою ідеальну книгу! Ми створили цю платформу з любов'ю до читання, щоб кожен мав змогу легко і швидко знайти літературу, яка надихає, розвиває, розважає або просто приносить задоволення.
-
-      Наш асортимент включає книги на будь-який смак: від класики світової літератури до новітніх бестселерів, наукової фантастики, детективів, біографій, ділової літератури і книг для саморозвитку.
-    </p>
-    </div>
-  </main>
+<table>
+    <tr class="content-row">
+        <td class="content-cell">
+            <h3>Гарантія якості</h3>
+            <p>Ми співпрацюємо лише з перевіреними постачальниками. Кожна книга, яку ви замовляєте у нас, проходить ретельний контроль якості, що забезпечує ідеальний стан продукції.</p>
+        </td>
+        <td class="content-cell">
+            <h3>Доступні ціни</h3>
+            <p>Наші ціни орієнтовані на широкий спектр покупців. Ми пропонуємо вигідні знижки та акції, щоб кожен міг дозволити собі улюблені книги.</p>
+        </td>
+        <td class="content-cell">
+            <h3>Зручність замовлення</h3>
+            <p>Наш інтерфейс дозволяє легко та швидко знайти потрібну книгу та оформити замовлення. Ми забезпечуємо простий процес покупки в декілька кліків.</p>
+        </td>
+        <td class="content-cell">
+            <h3>Широкий вибір</h3>
+            <p>У нашому каталозі представлено тисячі книг різних жанрів. Від класики до сучасної літератури — у нас знайдеться книга для кожного.</p>
+        </td>
+    </tr>
+</table>
   <footer class="footer">
-      <div class="container">
-        <div class="contact">
-          <table style="width:100%">
-            <tr>
-              <th style="width:45%"><img src="img/number.svg" alt="Number"></th>
-              <th style="width:45%"><img src="img/email.svg" alt="Email"></th>
-              <th style="width:45%"><img src="img/location.svg" alt="Location"></th>
+      <div class="contact">
+<table>
+
+            <tr id="tr">
+              <td style="width:45%"><img src="img/number.svg" alt="Number"></td>
+              <td style="width:45%"><img src="img/email.svg" alt="Email"></td>
+              <td style="width:45%"><img src="img/location.svg" alt="Location"></td>
             </tr>
             <tr>
               <td>+380983450729</td>
@@ -63,13 +74,14 @@
             </tr>
           </table>
         </div>
-        <div class="copyright">
-          <p>2024</p>
-        </div>
+        <td class="copyright">
+          <p id="p">2024</p>
+        </td>
       </div>
     </footer>
 
-  </div>
-</header>
+</div>
+
+
 </body>
 </html>

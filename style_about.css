@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@ body {
 }
 
 table {
-    width: 1440px;
+    width: 100%; /* Встановлено на 100% для адаптивності */
     border-collapse: collapse;
     margin: 0;
     background-color: #303552;
@@ -21,26 +20,21 @@ table {
     background-color: #303552;
     color: white;
     height: 50px;
-    padding:20px 0;
+    padding: 20px 0;
     text-align: center;
-    margin:0px;
-    width: 1440px;
-
+    width: 100%; /* Змінено на 100% */
 }
 
 .nav-cell {
     text-align: left;
     padding-left: 100px;
     padding-top: 25px;
-
-
 }
 
 .nav-links {
     text-align: right;
     padding-right: 100px;
     padding-top: 25px;
-
 }
 
 .nav-links a {
@@ -56,15 +50,9 @@ table {
     text-align: center;
     height: 200px;
     margin: 0;
-
-    background-size: cover;
-    background-position: left;
 }
 
 .header-row h1 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     font-family: 'Alex Brush';
     font-size: 64px;
 }
@@ -81,13 +69,12 @@ table {
     font-size: 18px;
     vertical-align: top;
     width: 360px;
-    height: 450px;
+    height: 350px;
     display: inline-block;
     margin-bottom: 0px;
 }
 
 .content-cell h3 {
-
     font-size: 24px;
 }
 
@@ -96,43 +83,152 @@ table {
     font-size: 24px;
     text-align: justify;
 }
-.footer{
-    background-color: #303552;
-    width:1440px;
-    height:200px ;
-    margin:0;
-    background-position: center, bottom;
-    margin-top: 0px;
-    padding-left: 5px;
 
+.footer {
+    background-color: #303552;
+    width: 100%; /* Змінено на 100% */
+    height: auto; /* Автоматична висота */
+    margin: 0;
+    padding: 15px; /* Зменшено паддінг */
 }
-.contact{
-    color:white;
+
+.contact {
+    color: white;
     font-family: Allerta;
     font-size: 16px;
     object-position: bottom;
     padding: 15px;
-    width:10px;
-    padding-right: 10px;
-
+    width: 100%;
 }
-.copyright{
+
+.contact th, .contact td {
+    width: 45%; /* Рівномірний розподіл ширини стовпців */
+}
+
+.copyright {
     color: white;
     font-family: Alice;
     text-align: center;
-
 }
-#p{
+
+#p {
     padding-top: 40px;
     color: white;
     font-family: Alice;
     text-align: center;
 }
-#tr{
+
+#tr {
     padding-left: 20px;
     padding-right: 20px;
-
 }
+
+/* Планшетна версія */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-row {
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        padding: 10px; /* Зменшений паддінг */
+        text-align: center; /* Центрування для планшетів */
+    }
+
+    .content-cell {
+        width: 100%; /* Зменшена ширина контенту для планшетів */
+        height: 200px;
+        display: inline-block; /* Залишити у блочному режимі */
+        margin-bottom: 20px; /* Відступ між блоками */
+    }
+
+    .footer {
+        height: auto; /* Автоматична висота */
+        padding: 15px; /* Зменшити паддінг */
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column; /* Вертикальне розташування */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact tr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .contact th, .contact td {
+        font-size: 12px; /* Зменшити розмір тексту */
+        display: block;
+        width: 20%;
+    }
+
+    .contact img {
+        max-width: 30px; /* Збільшити розмір іконок для кращого вигляду */
+        margin-bottom: 5px;
+    }
+}
+
+/* Мобільна версія */
+@media screen and (max-width: 767px) {
+    .nav {
+        display: flex;
+        justify-content: space-between; /* Вирівнювання елементів по краях */
+        align-items: center; /* Вертикальне вирівнювання */
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between; /* Вирівнювання елементів всередині навігаційних посилань */
+        align-items: center; /* Вертикальне вирівнювання */
+        column-gap: 10px; /* Відстань між стовпцями */
+        row-gap: 10px; /* Відстань між рядами (можна прибрати, якщо не потрібно) */
+    }
+
+    .nav-cell {
+        padding-left: 50px;
+        margin: 0; /* Прибрати відступи */
+        align-items: center; /* Вертикальне вирівнювання */
+    }
+
+
+    .content-cell {
+        width: 100%; /* Ширина 100% для мобільних */
+        display: block; /* Блочне відображення для мобільних */
+        margin-bottom: 10px; /* Відступ між блоками */
+    }
+
+    .header-row h1 {
+        font-size: 36px; /* Зменшений шрифт заголовка */
+    }
+
+    .header-row h2 {
+        font-size: 18px; /* Зменшений шрифт підзаголовка */
+    }
+
+    .footer {
+        padding: 10px; /* Зменшити паддінг */
+        text-align: center; /* Центрування тексту у футері */
+    }
+
+    .contact {
+        display: block; /* Блочне відображення для мобільних */
+        padding: 10px;
+    }
+
+    .contact th, .contact td {
+        font-size: 14px; /* Зменшити розмір тексту для мобільних */
+        width: 100%; /* Ширина 100% для мобільних */
+    }
+
+    .contact img {
+        max-width: 20px; /* Зменшити розмір іконок для мобільних */
+    }
+}
+
 
 
 

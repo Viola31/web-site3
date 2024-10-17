@@ -1,8 +1,11 @@
+
 body {
     margin: 0;
+    width: 100%;
 }
+
 h1 {
-    background-image: url('img/Rectangle 1.jpg');
+    background-color: #303552;
     background-size: cover;
     background-position: center;
     color: white;
@@ -13,24 +16,30 @@ h1 {
     flex-shrink: 0;
 }
 
+.header {
+    background-color: #303552;
+    width: 100%;
+}
+
 .nav {
     background-color: #303552;
     background-position: center;
     background-size: cover;
     color: white;
-    padding:20px 0;
+    padding: 20px 0;
     text-align: center;
-    margin:0px;
+    margin: 0px;
     width: 100%;
 }
-.container{
-    margin:0 auto;
-    padding : 0 15px;
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
     max-width: 1170px;
     text-align: left;
-
 }
-.nav-row{
+
+.nav-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,12 +47,12 @@ h1 {
     row-gap: 20px;
     flex-wrap: wrap;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     column-gap: 30px;
     align-items: center;
 }
-
 
 .btn {
     width: 200px;
@@ -61,52 +70,52 @@ h1 {
     transition: 0.3s;
     cursor: pointer;
     font-family: Allerta;
-
 }
+
 .btn:hover {
-    background-color:#E8EBFD;
+    background-color: #E8EBFD;
     transition: 0.7s;
     opacity: 1;
 }
+
 main {
     flex-grow: 1;
 }
-.footer{
+
+.footer {
     background-color: #303552;
-    width:100%;
-    height:200px ;
-    margin:0;
-    background-position: center, bottom;
-    margin-top: 240px;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    background-position: center bottom;
     margin-top: 340px;
     margin-bottom: 0;
 }
-.contact{
-    color:white;
+
+.contact {
+    color: white;
     font-family: Allerta;
     font-size: 16px;
     object-position: bottom;
     padding: 15px;
-    width:100%;
-
+    width: 100%;
 }
-.copyright{
+
+.copyright {
     color: white;
     font-family: Alice;
     text-align: center;
-
 }
-.form{
+
+.form {
     text-align: center;
     display: block;
-    width: 1209px;
+    width: 100%;
+    max-width: 1209px;
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0px;
-    margin-bottom: 20px;
-    margin-top: 100px;
+    margin: 100px auto 20px;
 }
+
 .section {
     display: flex;
     flex-direction: column;
@@ -114,20 +123,25 @@ main {
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 50px;
+}
+.contact th, .contact td {
+    width: 45%; /* Рівномірний розподіл ширини стовпців */
 
 }
 
 .logic {
     margin-bottom: 20px;
 }
-#h1{
+
+#h1 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Alex Brush';
     font-size: 400%;
 }
-.books-list{
+
+.books-list {
     display: flex;
     column-gap: 90px;
     align-items: center;
@@ -135,35 +149,36 @@ main {
     background-size: cover;
     padding: 10px;
     margin-bottom: 20px;
-    list-style-type:none;
-
-
+    list-style-type: none;
+    flex-wrap: wrap;
 }
-.line{
+
+.line {
     padding-top: 6px;
     margin-bottom: 1px;
     text-align: center;
     font-size: 24px;
 }
-.news{
-    width: 1209px;
+
+.news {
+    width: 100%;
     height: 300px;
     flex-shrink: 0;
     background: #E8EBFD;
     padding-top: 10px;
-    padding-bottom: 0px ;
     text-align: center;
     font-style: normal;
     font-weight: 200;
-    line-height: normal;
     font-size: 150%;
     color: black;
 }
-.img{
+
+.img {
     text-align: left;
     padding-left: 12px;
 }
-.bottom{
+
+.bottom {
     justify-content: space-between;
     display: flex;
     padding-left: 12px;
@@ -171,3 +186,179 @@ main {
     align-items: center;
     padding-bottom: 20px;
 }
+
+/* Планшети */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .books-list{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer {
+        height: 250px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        margin-top: 340px;
+    }
+
+    h1 {
+        height: 150px;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+/* Мобільні пристрої */
+@media screen and (max-width: 550px) {
+
+
+
+
+
+
+    .container {
+        max-width: 90%;
+        padding: 0 60px;
+    }
+
+    .footer {
+        height: 250px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        height: 180px;
+        font-size: 2rem;
+    }
+
+    .news {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .books-list {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin: 50px auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #AAB6FC;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #111;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #E8EBFD;
+    }
+
+
+    body {
+        width: 100%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact tr {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        column-gap: 30px;
+        padding-right: 50px;
+    }
+
+    .contact th, .contact td {
+        font-size: 10px; /* Зменшити розмір тексту */
+        text-align: center;
+        display: block;
+        width:20% ;
+        column-gap: 30px;
+    }
+
+    .contact img {
+        max-width: 30px; /* Збільшити розмір іконок для кращого вигляду */
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .nav {
+        justify-content: space-between; /* Гнучке горизонтальне розташування для великих екранів */
+    }
+}
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    .news {
+        box-shadow: 0 4px 8px rgba(17, 17, 17, 0.5); /* Задає тінь */
+    }
+}
+
+
+

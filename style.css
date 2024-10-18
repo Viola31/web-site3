@@ -125,7 +125,7 @@ main {
     margin-top: 50px;
 }
 .contact th, .contact td {
-    width: 45%; /* Рівномірний розподіл ширини стовпців */
+    width: 45%;
 
 }
 
@@ -235,12 +235,6 @@ main {
 
 /* Мобільні пристрої */
 @media screen and (max-width: 550px) {
-
-
-
-
-
-
     .container {
         max-width: 90%;
         padding: 0 60px;
@@ -337,7 +331,7 @@ main {
     }
 
     .contact th, .contact td {
-        font-size: 10px; /* Зменшити розмір тексту */
+        font-size: 10px;
         text-align: center;
         display: block;
         width:20% ;
@@ -345,7 +339,7 @@ main {
     }
 
     .contact img {
-        max-width: 30px; /* Збільшити розмір іконок для кращого вигляду */
+        max-width: 30px;
         margin-bottom: 5px;
     }
 }
